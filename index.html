@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .flower-card{
+            width: 350px;
+            height: 450px;
+            border: 1px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0,0, 0.5);
+            border-radius: 10px;
+            margin:  20px;
+        }
+        .flower-img{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+        .title{
+            text-align: center;
+
+        }
+        .rose-info{
+            text-align: justify;
+            padding: 0 10px;
+            font-size: 20px;
+        }
+        .flower-btn{
+            display: block;
+            margin: 0 auto;
+            font-size: 25px;
+            padding: 5px 20px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(241, 107, 196);
+        }
+        .navbar{
+            background-color: rgb(248, 131, 238);
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: sticky;
+            top:0;
+            display: flex;
+            align-items: center;
+        }
+        .menu{
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 200px;
+            text-align: left;
+            
+        }
+        
+        /* mobile */
+        @media (max-width: 600px){
+            .title{
+                text-align: left;
+                padding-left: 20px;
+                font-size:22px;
+                margin:5px 0;
+            }
+            .flower-card{
+                width: 400px;
+                height: 400px;
+            }
+            .flower-btn{
+                font-size: 20px;
+                padding: 5px;
+            }
+            .rose-info{
+                padding: 0 20px;
+                font-size: 16px;
+            }
+            .menu{
+                display: none;
+            }
+            
+        }
+            /* tablet */
+            @media (min-width: 610px) and (max-width: 800px) {
+                .container {
+                    background-color: pink;
+                }
+            .flower-card{
+            width: 350px;
+            height: 410px;
+            }
+            .title{
+                font-size: 24px;
+            }
+            .rose-info{
+                font-size: 16px;
+            }
+            .flower-btn{
+                font-size: 20px;
+                padding: 5px 30px;
+
+            }
+            .menu{
+                margin-left: 40px;
+            }
+        }
+        /* laptop */
+        @media (min-width:801px)and (max-width:1024px){
+          .menu{
+            margin-left: 200px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 >Flowers</h1>
+        <div class="menu">
+            <a href="#" class="menu">Home</a>
+            <a href="#" class="menu">About Us</a>
+            <a href="#" class="menu">Contact</a>
+            <a href="#" class="menu">Location</a>
+            </div>
+        </div>
+    <div class="container">
+        <div class="flower-card">
+            <img src="rose" class="flower-img" alt="rose">
+            <h1 class="title">Rose</h1>
+            <p class="rose-info">
+                Rose is a small sweet-scented flowering shrub and is grown in almost all countries. They have little thorns on the stem and come in various colours.
+            </p>
+            <button class="flower-btn">Know more</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="rose" class="flower-img" alt="rose">
+            <h1 class="title">Rose</h1>
+            <p class="rose-info">
+                Rose is a small sweet-scented flowering shrub and is grown in almost all countries. They have little thorns on the stem and come in various colours.
+            </p>
+            <button class="flower-btn">Know more</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="rose" class="flower-img" alt="rose">
+            <h1 class="title">Rose</h1>
+            <p class="rose-info">
+                Rose is a small sweet-scented flowering shrub and is grown in almost all countries. They have little thorns on the stem and come in various colours.
+            </p>
+            <button class="flower-btn">Know more</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="rose" class="flower-img" alt="rose">
+            <h1 class="title">Rose</h1>
+            <p class="rose-info">
+                Rose is a small sweet-scented flowering shrub and is grown in almost all countries. They have little thorns on the stem and come in various colours.
+            </p>
+            <button class="flower-btn">Know more</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="rose" class="flower-img" alt="rose">
+            <h1 class="title">Rose</h1>
+            <p class="rose-info">
+                Rose is a small sweet-scented flowering shrub and is grown in almost all countries. They have little thorns on the stem and come in various colours.
+            </p>
+            <button class="flower-btn">Know more</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="rose" class="flower-img" alt="rose">
+            <h1 class="title">Rose</h1>
+            <p class="rose-info">
+                Rose is a small sweet-scented flowering shrub and is grown in almost all countries. They have little thorns on the stem and come in various colours.
+            </p>
+            <button class="flower-btn">Know more</button>
+        </div>
+    </div>
+
+</body>
+</html>
